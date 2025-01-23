@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal - Site Responsivo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a href="#conteudo" class="skip">Pular para o conteúdo principal</a>
+    <header>
+        <img src="images/logo.png" alt="PalmeirasLogo" class="logo" tabindex="0">
+    </header>
+
+    <h2>Sociedade Esportiva Palmeiras</h2>
+    <nav>
+        <ul id="menu">
+            <li><a href="historia.html" tabindex="1">Historia</a></li>
+            <li><a href="idolos.html" tabindex="2">Idolos</a></li>
+            <li><a href="torcedor.html" tabindex="3">Espaço Torcedor</a></li>
+        </ul>
+        <hr><hr>
+    </nav>
+    <section id="conteudo">
+        <h2 id="mudarNome">Bem vindo, torcedor!</h2>
+        <h2>A Grande Academia de Futebol</h2>
+        <img src="images/primeiraacademia.jpeg" alt="PrimeiraAcademia" class="academiadefut1" tabindex="4">
+        <p>A imagem acima mostra dois grandes ídolos da Primeira Academia de Futebol do Palmeiras: Dudu Olegário e Ademir da Guia.</p>
+    </section>
+    <section>
+        <h2>Os Milagres de São Marcos</h2>
+        <video controls class="video-responsivo" tabindex="5"> <source src="videos/saomarcos.mp4"> 
+        <p>O vídeo mostra lances milagrosos do Goleiro Marcos pelo Palmeiras.</p>
+    </section>
+    <section>
+        <h2>A Renovada Academia de Futebol</h2>
+        <img src="images/renovacao.jpeg" alt="Renovacao" class="academiadefut2" tabindex="6">
+        <p>Na imagem podemos ver a renovação das academias de Futebol, passando desde a Primeira Academia de Ademir da Guia até a nova Academia de Dudu.</p>
+    </section>
+    <section>
+        <h2>Tradição com mais de 100 anos de história</h2>
+        <img src="images/paulonunes.jpeg" alt="Historia" class="academiadefut3" tabindex="7">
+        <p>Na imagem vemos o Ex-Jogador Paulo Nunes fazendo uma de suas famosas comemorações homenageando a Ex-Atriz conhecida como Feiticeira.</p>
+    </section>
+    <hr><hr>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+<footer>
+    <p>&copy: 2024 Sociedade Esportiva Palmeiras.</p>
+</footer>
+</html>

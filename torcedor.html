@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Site Responsivo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a href="#conteudo" class="skip">Pular para o conteúdo principal</a>
+    <header>
+        <img src="images/logo.png" alt="PalmeirasLogo" class="logo">
+    </header>
+
+    <h2>Espaço Torcedor</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html" tabindex="1">Home</a></li>
+            <li><a href="historia.html" tabindex="2">História</a></li>
+            <li><a href="idolos.html" tabindex="3">Idolos</a></li>
+        </ul>
+        <hr><hr>
+    </nav>
+    <section id="conteudo">
+        <h2>Formulário de Contato</h2>
+        <h2 id ="mudarNome">Fale conosco, torcedor!</h2>
+    <form action="/enviar" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Dados do Torcedor</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Questionário</legend>
+            <label for="opcoes">Qual o técnico mais vitorioso do Palmeiras:</label>
+            <select id="opcoes" name="opcoes" required>
+                <option value="opcao1">Abel Ferreira</option>
+                <option value="opcao2">Luis Felipe Scolari</option>
+                <option value="opcao3">Oswaldo Brandão</option>
+            </select><br><br>
+
+            <label for="jogador">Assinale quais jogadores já jogaram pelo Palmeiras:</label><br>
+            <input type="checkbox" id="jogador1" name="jogador" value="jogador1">
+            <label for="jogador1">"Craque" Neto</label><br>
+            <input type="checkbox" id="jogador2" name="jogador" value="jogador2">
+            <label for="jogador2">Souza</label><br>
+            <input type="checkbox" id="jogador3" name="jogador" value="jogador3">
+            <label for="jogador3">Djalma Santos</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Quem mais jogou pelo Verdão</legend>
+            <label>Escolha uma opção:</label><br>
+            <input type="radio" id="opcaoA" name="jogador" value="A" required>
+            <label for="opcaoA">Marcos</label><br>
+            <input type="radio" id="opcaoB" name="jogador" value="B" required>
+            <label for="opcaoB">Dudu Olegário</label><br>
+            <input type="radio" id="opcaoC" name="jogador" value="C" required>
+            <label for="opcaoC">Ademir da Guia</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Foto do Torcedor</legend>
+            <label for="arquivos">Coloque aqui uma foto sua com a camisa do Palmeiras:</label>
+            <input type="file" id="arquivos" name="arquivos[]" accept=".jpg, .jpeg, .png, .pdf" multiple><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    </section>
+    <hr><hr>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+<footer>
+    <p>&copy: 2024 Sociedade Esportiva Palmeiras.</p>
+</footer>
+</html>

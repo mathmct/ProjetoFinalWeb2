@@ -1,0 +1,159 @@
+body {
+    background-color: #004d00; 
+    color: #ffffff; 
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+.logo {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px; 
+    height: auto; 
+    margin: 10px; 
+    z-index: 10; 
+}
+  
+header {
+    position: fixed; 
+    top: 0; 
+    background-color: #006400; 
+    padding: 10px; 
+    z-index: 1000; 
+}
+  
+ 
+header .logo {
+    width: 100px; 
+    height: auto;
+}
+  
+h2 {
+    margin-top: 80px; 
+    text-align: center; 
+    color: #ffffff; 
+}
+  
+nav {
+    margin: 20px;
+    text-align: center; 
+}
+  
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+  
+nav li {
+    display: inline; 
+    margin-right: 15px; 
+}
+  
+nav a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+  
+nav a:hover {
+    text-decoration: underline; 
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto; 
+    max-width: 800px; 
+}
+
+.skip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+.skip:focus {
+    top: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.video-responsivo {
+    width: 100%; height: auto; max-width: 800px;
+}
+
+.academiadefut1{
+    width: 400px; 
+    height: 500px; 
+    object-fit: cover; 
+}
+
+.academiadefut2{
+    width: 400px; 
+    height: 500px; 
+    object-fit: cover; 
+}
+
+.academiadefut3{
+    width: 400px; 
+    height: 500px; 
+    object-fit: cover; 
+}
+
+.palestraitalia{
+    width: 1000px; 
+    height: 600px; 
+    object-fit: cover; 
+}
+
+.academia{
+    width: 1000px; 
+    height: 600px; 
+    object-fit: cover; 
+}
+
+.selecao{
+    width: 1000px; 
+    height: 600px; 
+    object-fit: cover; 
+}
+
+.ademirdaguia{
+    width: 400px; 
+    height: 500px; 
+    object-fit: cover; 
+}
+
+.duduolegario{
+    width: 400px; 
+    height: 500px; 
+    object-fit: cover; 
+}
+
+.marcos{
+    width: 400px; 
+    height: 500px; 
+    object-fit: cover; 
+}
+
+footer {
+    text-align: center;     
+    padding: 20px;         
+    position: relative;     
+}
