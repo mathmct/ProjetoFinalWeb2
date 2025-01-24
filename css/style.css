@@ -157,3 +157,29 @@ footer {
     padding: 20px;         
     position: relative;     
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.logo {
+    max-width: 300px;
+    width: 100%;
+}
+
+
+section img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+    }
+}
